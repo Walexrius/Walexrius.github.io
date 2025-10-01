@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        {% for link in site.nav_links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>Connect with me: 
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a> | 
+      <a href="{{ site.linkedin }}">LinkedIn</a> | 
+      <a href="mailto:{{ site.email }}">Email</a>
+    </p>
+  </footer>
+</body>
+</html>

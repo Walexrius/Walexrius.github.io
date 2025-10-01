@@ -1,16 +1,45 @@
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
-    color: #333;
+header nav {
+  background: #007acc;
+  padding: 1em;
 }
 
-a {
-    color: #007acc;
-    text-decoration: none;
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-a:hover {
-    text-decoration: underline;
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+footer {
+  text-align: center;
+  margin: 2em 0;
+  color: #555;
 }
