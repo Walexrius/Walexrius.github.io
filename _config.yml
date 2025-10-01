@@ -1,0 +1,19 @@
+title: "Kamal Singh"
+description: "Medical Student & Biomedical Engineer | Portfolio"
+baseurl: ""
+url: "https://Walexrius.github.io"
+theme: minima
+
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+  - title: "Projects"
+    url: "/projects"
+  - title: "Contact"
+    url: "/contact"
+
+github_username: Walexrius
+linkedin: "https://www.linkedin.com/in/kamalsingh"
+email: "kamal@example.com"
