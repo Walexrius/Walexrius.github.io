@@ -189,6 +189,70 @@ filterBtn.forEach((btn) => {
 });
 
 // ===============================
+// BLOG FILTER & SORTING
+// ===============================
+"use strict";
+
+// ===============================
+// BLOG FILTER & SORTING
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  const blogFilterBtns = document.querySelectorAll(".blog-filter-btn");
+  const blogItems = document.querySelectorAll(".blog-post-item");
+
+  // Convert NodeList to array for easier sorting
+  const blogArray = Array.from(blogItems);
+
+  // Helper function: sort blog items by date (recent first)
+  const sortBlogItems = (items) => {
+    return items.sort((a, b) => {
+      const dateA = new Date(a.querySelector("time").getAttribute("datetime"));
+      const dateB = new Date(b.querySelector("time").getAttribute("datetime"));
+      return dateB - dateA;
+    });
+  };
+
+  // Render items in the blog list
+  const renderBlogItems = (items) => {
+    const list = document.querySelector(".blog-posts-list");
+    list.innerHTML = "";
+    items.forEach((item) => list.appendChild(item));
+  };
+
+  // Initial load: show all sorted
+  renderBlogItems(sortBlogItems(blogArray));
+
+  // Filter click handler
+  blogFilterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Remove active from all buttons
+      blogFilterBtns.forEach((b) => b.classList.remove("active"));
+
+      // Set active to clicked button
+      btn.classList.add("active");
+
+      let filter = btn.dataset.category.toLowerCase().trim();
+
+      // Treat Professional & Academic as a single category
+      if (filter === "professional-&-academic") {
+        filter = "professional-&-academic";
+      }
+
+      let filteredItems;
+      if (filter === "all") {
+        filteredItems = blogArray;
+      } else {
+        filteredItems = blogArray.filter(
+          (item) => item.dataset.category.toLowerCase() === filter
+        );
+      }
+
+      // Render sorted filtered items
+      renderBlogItems(sortBlogItems(filteredItems));
+    });
+  });
+});
+// ===============================
 // CONTACT FORM VALIDATION
 // ===============================
 const form = document.querySelector("[data-form]");

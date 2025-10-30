@@ -173,6 +173,19 @@
               </a>
             </li>
 
+            <!-- Threads -->
+            <li class="social-item">
+              <a href="https://www.threads.net/letstalk_kamalsingh" class="social-link" target="_blank" rel="noopener">
+                <img
+                  src="assets/walex_images/threads.svg"
+                  alt="Threads"
+                  width="18"
+                  height="18"
+                  class="social-icon threads-social"
+                />
+              </a>
+            </li>
+
             <style>
               .social-icon {
                 transition: filter 0.3s ease;
@@ -575,9 +588,7 @@
                   <button data-select-item>Academic Recognitions</button>
                 </li>
                 <li class="select-item">
-                  <button data-select-item>
-                    Computer Science Recognitions
-                  </button>
+                  <button data-select-item>Computer Science Recognitions</button>
                 </li>
                 <li class="select-item">
                   <button data-select-item>Language Recognitions</button>
@@ -1516,201 +1527,132 @@
           </section>
         </article>
 
-        <!--
-        - #BLOG
-      -->
+<!-- Blog Section -->
+<article class="blog" data-page="blog">
+  <header>
+    <h2 class="h2 article-title">Blog</h2>
 
-        <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
+    <!-- Blog Filter Buttons -->
+    <div class="blog-filter">
+      <button class="blog-filter-btn active" data-category="all">All</button>
+      <button class="blog-filter-btn" data-category="personal">Personal</button>
+      <button class="blog-filter-btn" data-category="professional-&-academic">Professional & Academic</button>
+      <button class="blog-filter-btn" data-category="youtube">YouTube</button>
+    </div>
+  </header>
 
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-1.jpg"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    />
-                  </figure>
+  <section class="blog-posts">
+    <ul class="blog-posts-list">
+      <!-- Personal -->
+      <li class="blog-post-item" data-category="personal">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="/assets/walex_images/IMG_3908.jpeg" alt="Personal Post 1" loading="lazy" />
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Personal</p>
+              <span class="dot"></span>
+              <time datetime="2025-10-28">Oct 28, 2025</time>
+            </div>
+            <h3 class="h3 blog-item-title">Personal Blog Post 1</h3>
+            <p class="blog-text">This is a personal blog post description.</p>
+          </div>
+        </a>
+      </li>
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
+      <!-- Professional & Academic -->
+      <li class="blog-post-item" data-category="professional-&-academic">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="/assets/walex_images/IMG_3908.jpeg" alt="Professional Post 1" loading="lazy" />
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Professional & Academic</p>
+              <span class="dot"></span>
+              <time datetime="2025-10-27">Oct 27, 2025</time>
+            </div>
+            <h3 class="h3 blog-item-title">Professional & Academic Post 1</h3>
+            <p class="blog-text">This post is focused on professional or academic content.</p>
+          </div>
+        </a>
+      </li>
 
-                      <span class="dot"></span>
+      <!-- YouTube -->
+      <li class="blog-post-item" data-category="youtube">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="/assets/walex_images/IMG_3908.jpeg" alt="YouTube Post 1" loading="lazy" />
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">YouTube</p>
+              <span class="dot"></span>
+              <time datetime="2025-10-26">Oct 26, 2025</time>
+            </div>
+            <h3 class="h3 blog-item-title">YouTube Post 1</h3>
+            <p class="blog-text">This blog highlights content from my YouTube channel.</p>
+          </div>
+        </a>
+      </li>
 
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
+      <!-- Personal -->
+      <li class="blog-post-item" data-category="personal">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="/assets/walex_images/IMG_3908.jpeg" alt="Personal Post 2" loading="lazy" />
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Personal</p>
+              <span class="dot"></span>
+              <time datetime="2025-10-25">Oct 25, 2025</time>
+            </div>
+            <h3 class="h3 blog-item-title">Personal Blog Post 2</h3>
+            <p class="blog-text">Another personal update or experience shared here.</p>
+          </div>
+        </a>
+      </li>
 
-                    <h3 class="h3 blog-item-title">
-                      Design conferences in 2022
-                    </h3>
+      <!-- Professional & Academic -->
+      <li class="blog-post-item" data-category="professional-&-academic">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="/assets/walex_images/IMG_3908.jpeg" alt="Professional Post 2" loading="lazy" />
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Professional & Academic</p>
+              <span class="dot"></span>
+              <time datetime="2025-10-24">Oct 24, 2025</time>
+            </div>
+            <h3 class="h3 blog-item-title">Professional & Academic Post 2</h3>
+            <p class="blog-text">Another professional or academic insight.</p>
+          </div>
+        </a>
+      </li>
 
-                    <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt,
-                      explicabo.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-2.jpg"
-                      alt="Best fonts every designer"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Best fonts every designer
-                    </h3>
-
-                    <p class="blog-text">
-                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
-                      est eligendi.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-3.jpg"
-                      alt="Design digest #80"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                    <p class="blog-text">
-                      Excepteur sint occaecat cupidatat no proident, quis
-                      nostrum exercitationem ullam corporis suscipit.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-4.jpg"
-                      alt="UI interactions of the week"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      UI interactions of the week
-                    </h3>
-
-                    <p class="blog-text">
-                      Enim ad minim veniam, consectetur adipiscing elit, quis
-                      nostrud exercitation ullamco laboris nisi.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-5.jpg"
-                      alt="The forgotten art of spacing"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      The forgotten art of spacing
-                    </h3>
-
-                    <p class="blog-text">
-                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
-                      et dolore magna aliqua.
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-6.jpg"
-                      alt="Design digest #79"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                    <p class="blog-text">
-                      Optio cumque nihil impedit uo minus quod maxime placeat,
-                      velit esse cillum.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
+      <!-- YouTube -->
+      <li class="blog-post-item" data-category="youtube">
+        <a href="#">
+          <figure class="blog-banner-box">
+            <img src="/assets/walex_images/IMG_3908.jpeg" alt="YouTube Post 2" loading="lazy" />
+          </figure>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">YouTube</p>
+              <span class="dot"></span>
+              <time datetime="2025-10-23">Oct 23, 2025</time>
+            </div>
+            <h3 class="h3 blog-item-title">YouTube Post 2</h3>
+            <p class="blog-text">Another YouTube related post.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+</article>
 
         <!--
         - #CONTACT

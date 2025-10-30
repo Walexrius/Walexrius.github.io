@@ -666,11 +666,16 @@ main {
 }
 
 /* Threads SVG icon styling */
-  .threads-icon {
-    width: 22px;
-    height: 22px;
-    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-  }
+.threads-icon {
+  width: 22px;
+  height: 22px;
+  filter: grayscale(1) brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.threads-icon:hover {
+  filter: grayscale(0) brightness(1.5);
+}
 
 /* X / Twitter icon hover brightness */
 .youtube-social-icon {
@@ -680,6 +685,32 @@ main {
 .youtube-social-icon:hover {
   filter: brightness(1.5);
 }
+
+/* Sidebar (About) Threads icon: match ion-icon gray tone + smooth hover */
+
+/* Sidebar Threads icon: match ion-icon gray tone + smooth hover (keep invert on hover) */
+.social-list .social-link .social-icon.threads-social {
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+  transition: filter 0.3s ease;
+}
+
+.social-list .social-link .social-icon.threads-social:hover {
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(150%) contrast(100%) !important;
+}
+
+/* Force the Threads svg used in YouTube social list to match the same look & hover */
+.youtube-social-list .youtube-social-link .threads-icon,
+.youtube-social-list .youtube-social-link .threads-icon {
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%) !important;
+  transition: filter 0.3s ease !important;
+}
+
+.youtube-social-list .youtube-social-link:hover .threads-icon {
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(150%) contrast(100%) !important;
+}
+
+/* Make the profile image perfectly circular */
+/* Revert avatar to original shape */
 
 /**
  * #testimonials 
@@ -1204,7 +1235,7 @@ main {
 
 .blog-posts-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr); /* 2 articles per row */
   gap: 20px;
 }
 
@@ -1215,6 +1246,9 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 
 .blog-post-item > a::before {
@@ -1246,6 +1280,9 @@ main {
 
 .blog-content {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .blog-meta {
@@ -1266,13 +1303,15 @@ main {
   background: var(--light-gray-70);
   width: 4px;
   height: 4px;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .blog-item-title {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
+  color: var(--white-2);
+  font-size: var(--fs-5);
 }
 
 .blog-post-item > a:hover .blog-item-title {
@@ -1284,6 +1323,41 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+/* Blog Filters */
+.blog-filters,
+.blog-filter {
+  display: flex;
+  flex-wrap: nowrap; /* keep in one line */
+  gap: 12px;
+  margin-bottom: 20px;
+  overflow-x: auto; /* horizontal scroll if small screen */
+}
+
+.blog-filter-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--border-gradient-onyx);
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* keep text on one line */
+}
+
+.blog-filter-btn.active,
+.blog-filter-btn:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--white-2);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .blog-posts-list {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
 }
 
 /*-----------------------------------*\
@@ -1831,23 +1905,48 @@ textarea.form-input::-webkit-resizer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 25px;
+    gap: 8px; /* spacing between chips */
     padding-left: 5px;
     margin-bottom: 30px;
+    flex-wrap: nowrap; /* keep all chips in one row */
+    overflow-x: hidden; /* no horizontal scroll */
+  }
+
+  /* Let each chip shrink and allow its label to wrap to two lines if needed */
+  .filter-item {
+    flex: 1 1 0;      /* let all chips share the row equally */
+    min-width: 0;     /* allow shrinking below content width */
   }
 
   .filter-item button {
+    padding: 8px 12px;                 /* slightly tighter to fit text */
+    border: none;                      /* remove border */
+    border-radius: 8px;                /* rounded pills */
+    background: var(--border-gradient-onyx);
     color: var(--light-gray);
-    font-size: var(--fs-5);
-    transition: var(--transition-1);
+    font-size: var(--fs-6);            /* align with blog */
+    cursor: pointer;
+    transition: all 0.3s ease;         /* smooth hover */
+    white-space: normal;               /* allow label to wrap */
+    text-align: center;                /* center multi-line labels */
+    line-height: 1.3;                  /* comfortable two-line height */
+    display: inline-flex;              /* center content consistently */
+    align-items: center;
+    justify-content: center;
+    width: 100%;                       /* fill chip width to allow wrapping */
+    max-width: none;                   /* no max cap to allow equal sharing */
+    box-sizing: border-box;            /* include padding in width */
+    overflow-wrap: normal;             /* wrap only at spaces */
+    word-break: keep-all;              /* prevent breaking inside words */
+    hyphens: none;                     /* no auto-hyphenation */
   }
 
+  /* removed .filter-sub rule to restore original behavior */
+
+  .filter-item button.active,
   .filter-item button:hover {
-    color: var(--light-gray-70);
-  }
-
-  .filter-item button.active {
-    color: var(--orange-yellow-crayola);
+    background: var(--orange-yellow-crayola);
+    color: var(--white-2);
   }
 
   /* portfolio and blog grid */
