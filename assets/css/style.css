@@ -592,6 +592,94 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
+/* YouTube Highlight Section */
+.youtube-highlight {
+  margin: 40px 0;
+  background: var(--border-gradient-onyx);
+  padding: 32px 24px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  text-align: center;
+}
+
+.youtube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-icon-box img {
+  display: block;
+  border-radius: 12px;
+}
+
+.youtube-content-box {
+  max-width: 600px;
+}
+
+.youtube-title {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-size: var(--fs-5);
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+
+.youtube-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* Separator */
+.youtube-social-separator {
+  height: 1px;
+  background: var(--jet);
+  margin: 18px auto;
+  width: 60%;
+}
+
+/* Social List */
+.youtube-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.youtube-social-item .youtube-social-link {
+  color: var(--light-gray);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s ease;
+}
+
+.youtube-social-item .youtube-social-link:hover {
+  filter: brightness(1.6);
+}
+
+/* Threads SVG icon styling */
+  .threads-icon {
+    width: 22px;
+    height: 22px;
+    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  }
+
+/* X / Twitter icon hover brightness */
+.youtube-social-icon {
+  transition: filter 0.3s ease;
+}
+
+.youtube-social-icon:hover {
+  filter: brightness(1.5);
+}
 
 /**
  * #testimonials 
