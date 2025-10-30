@@ -2107,6 +2107,34 @@ article.portfolio .category-section .certificate-box img {
   display: block !important;
 }
 
+/* Rounded borders and subtle outline for each certificate */
+article.portfolio .category-section .certificate-box {
+  border: 1px solid var(--jet);
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+/* Show the eye icon centered over the certificate on hover */
+article.portfolio .category-section .certificate-box .project-item-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  z-index: 2;
+}
+
+article.portfolio .category-section .certificate-box:hover .project-item-icon-box {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* Certificate box text: white, bold, and properly spaced */
 article.portfolio .category-section .certificate-box p {
   color: var(--white-1) !important;

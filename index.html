@@ -706,6 +706,7 @@
           </section>
         </article>
 
+ 
         <!--
         - #PORTFOLIO
       -->
@@ -716,437 +717,393 @@
           </header>
 
           <section class="projects">
+
             <!-- FILTER BUTTONS -->
             <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Professional Recognitions</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Academic Recognitions</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Computer Science Recognitions</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Language Recognitions</button>
-              </li>
+              <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+              <li class="filter-item"><button data-filter-btn>Professional Recognitions</button></li>
+              <li class="filter-item"><button data-filter-btn>Academic Recognitions</button></li>
+              <li class="filter-item"><button data-filter-btn>Computer Science Recognitions</button></li>
+              <li class="filter-item"><button data-filter-btn>Language Recognitions</button></li>
             </ul>
 
-            <!-- SELECT BOX (for mobile) -->
+            <!-- MOBILE SELECT BOX -->
             <div class="filter-select-box">
               <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
+                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
               </button>
 
               <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Professional Recognitions</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Academic Recognitions</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>
-                    Computer Science Recognitions
-                  </button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Language Recognitions</button>
-                </li>
+                <li class="select-item"><button data-select-item>All</button></li>
+                <li class="select-item"><button data-select-item>Professional Recognitions</button></li>
+                <li class="select-item"><button data-select-item>Academic Recognitions</button></li>
+                <li class="select-item"><button data-select-item>Computer Science Recognitions</button></li>
+                <li class="select-item"><button data-select-item>Language Recognitions</button></li>
               </ul>
             </div>
 
-            <!-- MAIN RECOGNITION SECTIONS (SHOWN WHEN "ALL" IS SELECTED) -->
-            <ul
-              class="project-list"
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 30px;
-                justify-content: center;
-                padding: 0;
-                list-style: none;
-              "
-            >
-              <!-- Professional Recognitions -->
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="all"
-                style="flex: 1 1 calc(50% - 30px); max-width: 400px"
-              >
-                <a
-                  href="./assets/Professional_Recognitions/"
-                  style="text-decoration: none; display: block"
-                >
-                  <figure
-                    class="project-img"
-                    style="
-                      position: relative;
-                      overflow: hidden;
-                      width: 100%;
-                      height: 200px;
-                      margin: 0;
-                    "
-                  >
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/walex_images/IMG_3902.jpeg"
-                      alt="Professional Recognitions"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Professional Recognitions</h3>
-                  <p class="project-category">All</p>
-                </a>
-              </li>
-
-              <!-- Academic Recognitions -->
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="all"
-                style="flex: 1 1 calc(50% - 30px); max-width: 400px"
-              >
-                <a
-                  href="./assets/Academic_Recognitions/"
-                  style="text-decoration: none; display: block"
-                >
-                  <figure
-                    class="project-img"
-                    style="
-                      position: relative;
-                      overflow: hidden;
-                      width: 100%;
-                      height: 200px;
-                      margin: 0;
-                    "
-                  >
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/walex_images/IMG_3903.jpeg"
-                      alt="Academic Recognitions"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Academic Recognitions</h3>
-                  <p class="project-category">All</p>
-                </a>
-              </li>
-
-              <!-- Computer Science Recognitions -->
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="all"
-                style="flex: 1 1 calc(50% - 30px); max-width: 400px"
-              >
-                <a
-                  href="./assets/IT_Based_Recognitions/"
-                  style="text-decoration: none; display: block"
-                >
-                  <figure
-                    class="project-img"
-                    style="
-                      position: relative;
-                      overflow: hidden;
-                      width: 100%;
-                      height: 200px;
-                      margin: 0;
-                    "
-                  >
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/walex_images/IMG_3907.jpeg"
-                      alt="Computer Science Recognitions"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Computer Science Recognitions</h3>
-                  <p class="project-category">All</p>
-                </a>
-              </li>
-
-              <!-- Language Recognitions -->
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="all"
-                style="flex: 1 1 calc(50% - 30px); max-width: 400px"
-              >
-                <a
-                  href="./assets/Language_Recognitions/"
-                  style="text-decoration: none; display: block"
-                >
-                  <figure
-                    class="project-img"
-                    style="
-                      position: relative;
-                      overflow: hidden;
-                      width: 100%;
-                      height: 200px;
-                      margin: 0;
-                    "
-                  >
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/walex_images/IMG_3905.jpeg"
-                      alt="Language Recognitions"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Language Recognitions</h3>
-                  <p class="project-category">All</p>
-                </a>
-              </li>
-            </ul>
-
+            <!-- ALL TILES SECTION (4 cards, 2-per-row on desktop) -->
             <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
+              <li class="project-item active" data-tile-link="professional-recognitions">
+                <a href="#professional-recognitions">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
+                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                    <img src="./assets/walex_images/IMG_3902.jpeg" alt="Professional cover" />
                   </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
                 </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
+              <li class="project-item active" data-tile-link="academic-recognitions">
+                <a href="#academic-recognitions">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
+                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                    <img src="./assets/walex_images/IMG_3903.jpeg" alt="Academic cover" />
                   </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
                 </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
+              <li class="project-item active" data-tile-link="computer-science-recognitions">
+                <a href="#computer-science-recognitions">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    />
+                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                    <img src="./assets/walex_images/IMG_3907.jpeg" alt="Computer Science cover" />
                   </figure>
-
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
                 </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
+              <li class="project-item active" data-tile-link="language-recognitions">
+                <a href="#language-recognitions">
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
+                    <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                    <img src="./assets/walex_images/IMG_3905.jpeg" alt="Language cover" />
                   </figure>
-
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
                 </a>
               </li>
             </ul>
+
+            <!-- CATEGORY SECTIONS (hidden by default) -->
+            <div id="professional-recognitions" class="category-section" style="display:none;">
+              <div class="certificates-grid">
+                <!-- Professional Recognitions -->
+                <a href="./assets/Professional_Recognitions/BLSD_Adult.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Blsd Adult" />
+                  <p>Blsd Adult</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/BLSD_Paediatric.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Blsd Paediatric" />
+                  <p>Blsd Paediatric</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/Primary First Aid.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Primary First Aid" />
+                  <p>Primary First Aid</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/General Training.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="General Training" />
+                  <p>General Training</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/High Risk.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="High Risk" />
+                  <p>High Risk</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/Low Risk.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Low Risk" />
+                  <p>Low Risk</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/Medium Risk.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Medium Risk" />
+                  <p>Medium Risk</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/PTA Certificate..pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Pta Certificate" />
+                  <p>Pta Certificate</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Professional_Recognitions/Research_Methodology.png" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Research Methodology" />
+                  <p>Research Methodology</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+              </div>
+            </div>
+
+            <div id="academic-recognitions" class="category-section" style="display:none;">
+              <div class="certificates-grid">
+                <!-- Academic Recognitions -->
+                <a href="./assets/Academic_Recognitions/Algebra_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Algebra Basic" />
+                  <p>Algebra Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Anatomy & Physiology Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Anatomy And Physiology" />
+                  <p>Anatomy And Physiology</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Basic_ Entrepreneurship.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Basic Entrepreneurship" />
+                  <p>Basic Entrepreneurship</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Biology_Basics.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Biology Basics" />
+                  <p>Biology Basics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Canva Basics.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Canva Basics" />
+                  <p>Canva Basics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Chemistry_Course.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Chemistry Course" />
+                  <p>Chemistry Course</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Chemistry_OrganicCourse.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Chemistry Organic Course" />
+                  <p>Chemistry Organic Course</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Computer_Science.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Computer Science" />
+                  <p>Computer Science</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Economics_Basics.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Economics Basics" />
+                  <p>Economics Basics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Geometry_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Geometry Basic" />
+                  <p>Geometry Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/IT Basics.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="It Basics" />
+                  <p>It Basics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Photography_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Photography Basic" />
+                  <p>Photography Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Physics_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Physics Basic" />
+                  <p>Physics Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Academic_Recognitions/Visual_Studio_Code_.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Visual Studio Code" />
+                  <p>Visual Studio Code</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+              </div>
+            </div>
+
+            <div id="computer-science-recognitions" class="category-section" style="display:none;">
+              <div class="certificates-grid">
+                <!-- IT Based Recognitions -->
+                <a href="./assets/IT_Based_Recognitions/AI_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Ai Basic" />
+                  <p>Ai Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Arduino_ Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Arduino Basic" />
+                  <p>Arduino Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Artificial Intelligence.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Artificial Intelligence" />
+                  <p>Artificial Intelligence</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Big Data Analytics.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Big Data Analytics" />
+                  <p>Big Data Analytics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Blockchain.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Blockchain" />
+                  <p>Blockchain</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Blockchain_Basics.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Blockchain Basics" />
+                  <p>Blockchain Basics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Building a Website.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Building A Website" />
+                  <p>Building A Website</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Bulma CSS.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Bulma Css" />
+                  <p>Bulma Css</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/CSS.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Css" />
+                  <p>Css</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Cloud_Foundation.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Cloud Foundation" />
+                  <p>Cloud Foundation</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Cryptocurrency.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Cryptocurrency" />
+                  <p>Cryptocurrency</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Data Science.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Data Science" />
+                  <p>Data Science</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Digital Marketing Advanced.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Digital Marketing Advanced" />
+                  <p>Digital Marketing Advanced</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Ethical Hacking.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Ethical Hacking" />
+                  <p>Ethical Hacking</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Excel Beginner.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Excel Beginner" />
+                  <p>Excel Beginner</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Foundation Framework.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Foundation Framework" />
+                  <p>Foundation Framework</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Git_Fundamentals.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Git Fundamentals" />
+                  <p>Git Fundamentals</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Github_Fundamentals.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Github Fundamentals" />
+                  <p>Github Fundamentals</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/HTML.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Html" />
+                  <p>Html</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/HTML_CSS_Style.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Html Css Style" />
+                  <p>Html Css Style</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/IPv4 & Networking.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Ipv4 And Networking" />
+                  <p>Ipv4 And Networking</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Introduction_to_IoT.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Introduction To Iot" />
+                  <p>Introduction To Iot</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/JAVA_BASICS.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Java Basics" />
+                  <p>Java Basics</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/JavaScript.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Javascript" />
+                  <p>Javascript</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Linux_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Linux Basic" />
+                  <p>Linux Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Machine Learning.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Machine Learning" />
+                  <p>Machine Learning</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/NFTs.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Nfts" />
+                  <p>Nfts</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Python_Fundamentals.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Python Fundamentals" />
+                  <p>Python Fundamentals</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Social Media Marketing.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Social Media Marketing" />
+                  <p>Social Media Marketing</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Solidity.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Solidity" />
+                  <p>Solidity</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/IT_Based_Recognitions/Swift_ Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Swift Basic" />
+                  <p>Swift Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+              </div>
+            </div>
+
+            <div id="language-recognitions" class="category-section" style="display:none;">
+              <div class="certificates-grid">
+                <!-- Language Recognitions -->
+                <a href="./assets/Language_Recognitions/English Certificate.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="English Certificate" />
+                  <p>English Certificate</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Language_Recognitions/International_Sign.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="International Sign" />
+                  <p>International Sign</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Language_Recognitions/Italian Certificate.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Italian Certificate" />
+                  <p>Italian Certificate</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Language_Recognitions/Italian_Beginner.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Italian Beginner" />
+                  <p>Italian Beginner</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+                <a href="./assets/Language_Recognitions/Korean_Basic.pdf" target="_blank" class="certificate-box">
+                  <img src="./assets/walex_images/certificate.png" alt="Korean Basic" />
+                  <p>Korean Basic</p>
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                </a>
+              </div>
+            </div>
+
           </section>
+
         </article>
 
         <!--
