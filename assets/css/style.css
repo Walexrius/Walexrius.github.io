@@ -2070,17 +2070,51 @@ article.portfolio .project-img img {
   object-fit: cover;
 }
 
-/* Category certificates grid: 5 columns */
+/* Category certificates grid: 4 columns with elegant spacing */
 article.portfolio .category-section .certificates-grid {
   display: grid !important;
-  grid-template-columns: repeat(5, 1fr) !important;
-  gap: 12px !important;
+  /* 4 equal columns — each certificate gets one column */
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+  padding: 20px !important;
+  align-items: center !important;
 }
 
-/* Certificate box text: white and bold */
+/* Certificate box styling and sizing */
+article.portfolio .category-section .certificate-box {
+  position: relative;
+  background: var(--eerie-black-1);
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+article.portfolio .category-section .certificate-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-3);
+}
+
+/* Force certificate image to exactly 100x100 */
+article.portfolio .category-section .certificate-box img {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Certificate box text: white, bold, and properly spaced */
 article.portfolio .category-section .certificate-box p {
   color: var(--white-1) !important;
   font-weight: var(--fw-600) !important;
+  font-size: var(--fs-6) !important;
+  margin-top: 12px !important;
+  text-align: center !important;
+  line-height: 1.4 !important;
 }
 
 /* Responsive fallbacks */
@@ -2095,7 +2129,16 @@ article.portfolio .category-section .certificate-box p {
   }
 
   article.portfolio .category-section .certificates-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    padding: 15px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  article.portfolio .category-section .certificates-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
   }
 }
 
@@ -2106,7 +2149,12 @@ article.portfolio .category-section .certificate-box p {
   }
 
   article.portfolio .category-section .certificates-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 16px !important;
+    padding: 12px !important;
+  }
+
+  article.portfolio .category-section .certificate-box {
+    padding: 12px !important;
   }
 }
-
