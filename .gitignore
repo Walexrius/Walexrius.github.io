@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+node_modules/
+*.log
+*.bak
+.DS_Store
+
+# Jekyll
+.jekyll-cache/
+
+# backups
+assets/css/style.css.bak
