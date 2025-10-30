@@ -19,6 +19,21 @@ Before you begin, ensure you have met the following requirements:
 
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
+## Notes about this fork / CSS cleanup
+
+This repository has been modified to remove the "Testimonials" and "Clients" sections
+from `index.html` and to scope/clean the portfolio CSS. The generated site directory
+`_site/` is intentionally ignored in this branch. To build and preview locally:
+
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+If you make changes to `assets/css/style.css` and want to see them reflected in the
+site preview, rebuild with `bundle exec jekyll build` or restart `jekyll serve`.
+
+
 ## Installing vCard
 
 To install **vCard**, follow these steps:
