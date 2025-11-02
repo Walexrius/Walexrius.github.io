@@ -22,12 +22,44 @@ sidebarBtn.addEventListener("click", function () {
 // ===============================
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-selecct-value]"); // matches HTML typo
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 select.addEventListener("click", function () {
   elementToggleFunc(this);
+});
+
+// Add click handlers for mobile select dropdown items
+selectItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    // Get the selected category text
+    const selectedText = this.innerText;
+    
+    // Update the display value
+    if (selectValue) selectValue.innerText = selectedText;
+    
+    // Close the dropdown
+    select.classList.remove("active");
+    
+    // Normalize to category key
+    const selectedCategory = selectedText
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "");
+    
+    // Apply the filter
+    filterCategoryFunc(selectedCategory);
+    
+    // Update desktop filter buttons to match
+    filterBtn.forEach((btn) => {
+      if (btn.innerText === selectedText) {
+        if (lastClickedBtn) lastClickedBtn.classList.remove("active");
+        btn.classList.add("active");
+        lastClickedBtn = btn;
+      }
+    });
+  });
 });
 
 // keep track of last clicked filter btn (used for active state)
